@@ -1,3 +1,10 @@
+//  Exceeding Core Requirements:
+// 1. Added a motivational message when saving or quitting to encourage journaling.
+// 2. Used clear abstraction by separating responsibilities into three classes:
+//    - Entry (handles single journal records)
+//    - Journal (handles list management, saving, loading, displaying)
+//    - PromptGenerator (handles random prompt selection)
+
 public class Program
 {
     public static void Main(string[] args)
@@ -50,7 +57,7 @@ public class Program
             }
             else if (choice == "5")
             {
-                Console.WriteLine("Goodbye! Keep writing your story. 😊");
+                Console.WriteLine("Goodbye! Keep writing your story.");
             }
             else
             {
